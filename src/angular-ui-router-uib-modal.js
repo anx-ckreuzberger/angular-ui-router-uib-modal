@@ -37,7 +37,7 @@ angular.module("ui.router.modal", ["ui.router"])
 					modalInstance.result['finally'](function() {
 						if (modalInstance) {
 							// Dialog was closed via $uibModalInstance.close/dismiss, adjust state accordingly
-							$state.go('^');
+							$state.go('^', {}, { notify: false });
 						}
 					});
 				};
