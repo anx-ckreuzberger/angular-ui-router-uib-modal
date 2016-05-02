@@ -1,9 +1,11 @@
-angular-ui-router-uib-modal
-===========================
+angular-ui-router-uib-modal custom version
+==========================================
 
-[![Build Status](https://travis-ci.org/nonplus/angular-ui-router-uib-modal.svg?branch=master)](https://travis-ci.org/nonplus/angular-ui-router-uib-modal)
+[![Build Status](https://travis-ci.org/anx-ckreuzberger/angular-ui-router-uib-modal.svg?branch=master)](https://travis-ci.org/anx-ckreuzberger/angular-ui-router-uib-modal)
 
-AngularJS module that adds support for ui-bootstrap modal states when using ui-router.
+AngularJS module that adds support for ui-bootstrap modal states when using ui-router. This custom version does not resolve the parent state with ```$state.go('^');```, but uses ```$state.go('^', {}, { notify: false });```.
+
+If you are looking for the original repository, you can [find it here](https://github.com/nonplus/angular-ui-router-uib-modal).
 
 Motivation
 ----------
